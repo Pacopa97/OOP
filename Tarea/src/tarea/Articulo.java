@@ -75,7 +75,6 @@ public class Articulo {
     
     }
 
-    
     public int verificarExistencia(){
         return existencia;
     }
