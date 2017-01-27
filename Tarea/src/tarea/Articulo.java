@@ -63,22 +63,23 @@ public class Articulo {
       }
     
     public void compra(int e, double c){
-        setExistencia(e);
-        setCosto(c); 
+        this.existencia = (e+existencia) ;
+        this.setCosto(c); 
     }
     
     public boolean venta(int n){
         if(getExistencia()>=n){
-            setExistencia(n-getExistencia());
+            setExistencia(getExistencia()-n);
         return true;
         }else{
         return false; 
     }
     
     }
+
     
-    public void verificarExistencia(){
-        getExistencia();
+    public int verificarExistencia(){
+        return existencia;
     }
     
     public void actualizaPrecio(double precio){
