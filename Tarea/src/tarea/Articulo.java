@@ -12,16 +12,14 @@ public class Articulo {
     private double costo;
     public String descripcion;
     
-    public Articulo(int SKU,double costo,double precio,int existencia,String descripcion){
+    public Articulo(int SKU,double costo,String descripcion){
         this.SKU = SKU;
         this.costo = costo;
-        this.precio= precio;
-        this.existencia=existencia;
         this.descripcion=descripcion;   
     }
     
     public Articulo(){
-     this(0,0.00,0.00,0,"Sin descripcion");   
+     this(0,0.00,"Sin descripcion");   
     }
       public int getSKU() {
         return SKU;
