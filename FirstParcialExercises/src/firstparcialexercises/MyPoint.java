@@ -60,5 +60,9 @@ public double distance(int x, int y){
         dis = Math.sqrt(Math.pow((this.x), 2)+Math.pow((this.y), 2));
         return dis;
     }
+
+    void setXY(int x, int y) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
